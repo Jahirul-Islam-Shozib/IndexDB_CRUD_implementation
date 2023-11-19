@@ -1,0 +1,33 @@
+<div class="studentContainer">
+  <form id="studentForm" [formGroup]="studentForm" (ngSubmit)="onSubmitStudentForm()">
+    <div class="grid">
+
+      <div class="md:col-12 col-12">
+        <label class="py-2">Student Id</label>
+        <input type="number" pInputText formControlName="studentId"/>
+      </div>
+
+      <div class="md:col-12 col-12">
+        <label class="py-2">Student Name</label>
+        <input type="text" pInputText formControlName="studentName"/>
+      </div>
+
+      <div class="md:col-12 col-12">
+        <label class="py-2">Student Age</label>
+        <input type="number" pInputText formControlName="studentAge"/>
+      </div>
+
+      <div class="md:col-12 col-12">
+        <label class="py-2">Student Grade</label>
+        <input type="number" pInputText formControlName="studentGrade"/>
+      </div>
+    </div>
+
+    <div>
+      <p-button type="submit" label="Submit"></p-button>
+    </div>
+  </form>
+
+</div>
+
+
